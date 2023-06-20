@@ -19,7 +19,7 @@ jobs:
           role-to-assume: ${{ secrets.DEPLOY_ROLE }}
           role-session-name: OIDCSession
 
-      - run: aws s3 cp s3://test-fxs/README.md README.md
+      - run: aws s3 cp s3://test-fxs/README.md s3://test-fxs/jar/README.md
         shell: bash
         
         
